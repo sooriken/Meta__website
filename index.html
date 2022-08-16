@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <!-- viewport meta tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gulp</title>
+  <!-- style-->
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- normalize-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <div class="wrapper" id="wrapper">
+      <div class="header">
+        <div class="header__logo"><img src="images/logo.svg"/></div><a class="header__button" href="#" onclick="document.getElementById('wrapper').style.display='none';document.getElementById('sidebar').style.display='block';"><img src="images/header/header__button.svg"/></a>
+      </div>
+      <div class="content">
+        <div class="content__header">
+          <div class="container">
+            <div class="content__header-path">Главная / Личный кабинет</div>
+            <div class="content__header-title">Витрина подарков</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content__info">Твои баллы: 50<img src="images/content/scores-icon.svg"/></div>
+          <div class="content__cards-inner">
+            <div class="card">
+              <div class="card__image"><img src="images/cards/card__1.svg"/></div>
+              <div class="card__name">Термокружка</div>
+              <div class="card__price">700<img src="images/content/scores-icon__red.svg"/></div>
+            </div>
+            <div class="card">
+              <div class="card__image"><img src="images/cards/card__1.svg"/></div>
+              <div class="card__name">Термокружка</div>
+              <div class="card__price">900<img src="images/content/scores-icon__red.svg"/></div>
+            </div>
+            <div class="card">
+              <div class="card__image"><img src="images/cards/card__1.svg"/></div>
+              <div class="card__name">Фен-щётка</div>
+              <div class="card__price">1200<img src="images/content/scores-icon__red.svg"/></div>
+            </div>
+            <div class="card">
+              <div class="card__image"><img src="images/cards/card__1.svg"/></div>
+              <div class="card__name">Внешний аккумулятор</div>
+              <div class="card__price">1500<img src="images/content/scores-icon__red.svg"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__nav">
+          <!-- ".html" link-->
+          <!-- ".active" item modifier--><a class="footer__nav-link active">
+            <div class="footer__nav-icon"><img src="images/footer/icon__main.svg"/></div>
+            <div class="footer__nav-text">Главная</div></a>
+          <!-- ".html" link--><a class="footer__nav-link">
+            <div class="footer__nav-icon"><img src="images/footer/icon__catalog.svg"/></div>
+            <div class="footer__nav-text">Витрина</div></a>
+          <!-- ".html" link-->
+          <!-- "--qr" item modifier--><a class="footer__nav-link footer__nav-link--qr">
+            <div class="footer__nav-icon"><img src="images/footer/icon__qr.svg"/></div>
+            <div class="footer__nav-text">Сканер</div></a>
+          <!-- ".html" link--><a class="footer__nav-link">
+            <div class="footer__nav-icon"><img src="images/footer/icon__gift.svg"/></div>
+            <div class="footer__nav-text">Подарки</div></a>
+          <!-- ".html" link--><a class="footer__nav-link">
+            <div class="footer__nav-icon"><img src="images/footer/icon__account.svg"/></div>
+            <div class="footer__nav-text">Аккаунт</div></a>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar__header">
+        <div class="sidebar__header-logo"><img src="images/sidebar/sidebar__logo.svg"/></div><a class="sidebar__header-button" href="#" onclick="document.getElementById('sidebar').style.display='none';document.getElementById('wrapper').style.display='block';"><img src="images/sidebar/sidebar__button.svg"/></a>
+      </div>
+      <div class="sidebar__nav"><a class="sidebar__nav-link" href="#">Магазины</a><a class="sidebar__nav-link" href="#">Еда</a><a class="sidebar__nav-link" href="#">Услуги и сервисы</a><a class="sidebar__nav-link" href="#">Развлечения</a><a class="sidebar__nav-link" href="#">Новости</a></div>
+    </div>
+  </div>
+  <script>(src="js/main.min.js")</script>
+</body>
